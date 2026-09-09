@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aptitude - PlacementPrep</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">PlacementPrep</div>
+
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dsa.html">DSA</a>
+        <a href="development.html">Development</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="projects.html">Projects</a>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="aptitude-page">
+      <section class="aptitude-header">
+        <p>PLACEMENT PREPARATION</p>
+
+        <h1>Aptitude Tracker</h1>
+
+        <p>Improve your quantitative, logical and verbal reasoning skills.</p>
+      </section>
+
+      <section class="aptitude-stats">
+        <div class="aptitude-stat-card">
+          <h3 id="aptitude-total">0</h3>
+          <p>Total Questions</p>
+        </div>
+
+        <div class="aptitude-stat-card">
+          <h3 id="aptitude-solved">0</h3>
+          <p>Questions Solved</p>
+        </div>
+
+        <div class="aptitude-stat-card">
+          <h3 id="aptitude-accuracy">0%</h3>
+          <p>Accuracy</p>
+        </div>
+
+        <div class="aptitude-stat-card">
+          <h3 id="aptitude-progress">0%</h3>
+          <p>Progress</p>
+        </div>
+      </section>
+
+      <section class="aptitude-progress-card">
+        <div class="progress-heading">
+          <div>
+            <h2>Overall Aptitude Progress</h2>
+            <p id="aptitude-count">0 / 15 topics</p>
+          </div>
+
+          <span id="aptitude-percentage">0%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="aptitude-progress-fill"></div>
+        </div>
+      </section>
+
+      <!-- QUANTITATIVE -->
+
+      <section class="aptitude-section">
+        <h2>Quantitative Aptitude</h2>
+
+        <div class="aptitude-grid">
+          <div class="aptitude-card">
+            <h3>Percentages</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="percentages"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="percentages"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="percentages">
+              Save Score
+            </button>
+          </div>
+
+          <div class="aptitude-card">
+            <h3>Profit & Loss</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="profit"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="profit"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="profit">Save Score</button>
+          </div>
+
+          <div class="aptitude-card">
+            <h3>Time & Work</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="timework"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="timework"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="timework">
+              Save Score
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGICAL -->
+
+      <section class="aptitude-section">
+        <h2>Logical Reasoning</h2>
+
+        <div class="aptitude-grid">
+          <div class="aptitude-card">
+            <h3>Number Series</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="series"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="series"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="series">Save Score</button>
+          </div>
+
+          <div class="aptitude-card">
+            <h3>Blood Relations</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="relations"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="relations"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="relations">
+              Save Score
+            </button>
+          </div>
+
+          <div class="aptitude-card">
+            <h3>Seating Arrangement</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="seating"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="seating"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="seating">
+              Save Score
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VERBAL -->
+
+      <section class="aptitude-section">
+        <h2>Verbal Ability</h2>
+
+        <div class="aptitude-grid">
+          <div class="aptitude-card">
+            <h3>Vocabulary</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="vocabulary"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="vocabulary"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="vocabulary">
+              Save Score
+            </button>
+          </div>
+
+          <div class="aptitude-card">
+            <h3>Reading Comprehension</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="reading"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="reading"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="reading">
+              Save Score
+            </button>
+          </div>
+
+          <div class="aptitude-card">
+            <h3>Grammar</h3>
+
+            <div class="question-input">
+              <input
+                type="number"
+                class="correct-input"
+                data-topic="grammar"
+                placeholder="Correct"
+              />
+
+              <input
+                type="number"
+                class="total-input"
+                data-topic="grammar"
+                placeholder="Total"
+              />
+            </div>
+
+            <button class="aptitude-btn" data-topic="grammar">
+              Save Score
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

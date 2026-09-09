@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Goals - PlacementPrep</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">PlacementPrep</div>
+
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dsa.html">DSA</a>
+        <a href="development.html">Development</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="projects.html">Projects</a>
+        <a href="daily-goals.html">Daily Goals</a>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="goals-page">
+      <section class="goals-header">
+        <p>DAILY PREPARATION</p>
+
+        <h1>Today's Goals</h1>
+
+        <p>
+          Small consistent progress every day adds up to placement readiness.
+        </p>
+      </section>
+
+      <section class="goals-summary">
+        <div class="goal-summary-card">
+          <h3 id="goals-completed">0</h3>
+
+          <p>Goals Completed</p>
+        </div>
+
+        <div class="goal-summary-card">
+          <h3 id="goals-total">5</h3>
+
+          <p>Total Goals</p>
+        </div>
+
+        <div class="goal-summary-card">
+          <h3 id="goals-progress">0%</h3>
+
+          <p>Today's Progress</p>
+        </div>
+      </section>
+
+      <section class="goals-progress-card">
+        <div class="progress-heading">
+          <div>
+            <h2>Today's Progress</h2>
+            <p>Complete your daily preparation goals.</p>
+          </div>
+
+          <span id="goals-percentage">0%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="goals-progress-fill"></div>
+        </div>
+      </section>
+
+      <section class="goals-list">
+        <div class="goal-item">
+          <div class="goal-info">
+            <span class="goal-number">1</span>
+
+            <div>
+              <h3>Solve 2 DSA Problems</h3>
+              <p>Practice coding and problem solving.</p>
+            </div>
+          </div>
+
+          <button class="goal-btn" data-goal="dsa">Complete</button>
+        </div>
+
+        <div class="goal-item">
+          <div class="goal-info">
+            <span class="goal-number">2</span>
+
+            <div>
+              <h3>Study Development</h3>
+              <p>Spend at least 1 hour learning development.</p>
+            </div>
+          </div>
+
+          <button class="goal-btn" data-goal="development">Complete</button>
+        </div>
+
+        <div class="goal-item">
+          <div class="goal-info">
+            <span class="goal-number">3</span>
+
+            <div>
+              <h3>Practice Aptitude</h3>
+              <p>Solve at least 10 aptitude questions.</p>
+            </div>
+          </div>
+
+          <button class="goal-btn" data-goal="aptitude">Complete</button>
+        </div>
+
+        <div class="goal-item">
+          <div class="goal-info">
+            <span class="goal-number">4</span>
+
+            <div>
+              <h3>Revise Core Subject</h3>
+              <p>Revise one important technical topic.</p>
+            </div>
+          </div>
+
+          <button class="goal-btn" data-goal="revision">Complete</button>
+        </div>
+
+        <div class="goal-item">
+          <div class="goal-info">
+            <span class="goal-number">5</span>
+
+            <div>
+              <h3>Work on a Project</h3>
+              <p>Spend some time building your project.</p>
+            </div>
+          </div>
+
+          <button class="goal-btn" data-goal="project">Complete</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

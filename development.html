@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Development Tracker | PlacementPrep</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <header class="navbar">
+      <div class="logo">PlacementPrep</div>
+
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dsa.html">DSA</a>
+        <a href="development.html" class="active">Development</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="projects.html">Projects</a>
+
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </header>
+
+    <!-- Main Development Page -->
+
+    <main class="development-page">
+      <!-- Header -->
+
+      <section class="development-header">
+        <div>
+          <p class="small-text">DEVELOPMENT PREPARATION</p>
+
+          <h1>Development Tracker</h1>
+
+          <p>
+            Track your development skills and build your full-stack journey.
+          </p>
+        </div>
+      </section>
+
+      <!-- Overall Progress -->
+
+      <section class="development-progress-card">
+        <div class="development-progress-heading">
+          <div>
+            <p>Overall Development Progress</p>
+
+            <h2 id="development-progress">0%</h2>
+          </div>
+
+          <span id="development-count"> 0 / 12 skills </span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="development-progress-fill"></div>
+        </div>
+      </section>
+
+      <!-- Frontend -->
+
+      <section class="skill-section">
+        <div class="skill-section-heading">
+          <h2>Frontend Development</h2>
+
+          <p>Build the foundation of modern web development.</p>
+        </div>
+
+        <div class="skill-grid">
+          <!-- HTML -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>HTML</h3>
+
+              <p>Structure and semantic web pages.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="html">Mark Complete</button>
+          </div>
+
+          <!-- CSS -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>CSS</h3>
+
+              <p>Styling, layouts, Flexbox and Grid.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="css">Mark Complete</button>
+          </div>
+
+          <!-- JavaScript -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>JavaScript</h3>
+
+              <p>Modern JavaScript and DOM programming.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="javascript">
+              Mark Complete
+            </button>
+          </div>
+
+          <!-- React -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>React</h3>
+
+              <p>Components, hooks and modern frontend apps.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="react">Mark Complete</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Backend -->
+
+      <section class="skill-section">
+        <div class="skill-section-heading">
+          <h2>⚙️ Backend Development</h2>
+
+          <p>Learn how servers and APIs power applications.</p>
+        </div>
+
+        <div class="skill-grid">
+          <!-- Node -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>Node.js</h3>
+
+              <p>Build server-side applications using JavaScript.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="node">Mark Complete</button>
+          </div>
+
+          <!-- Express -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>Express.js</h3>
+
+              <p>Create backend servers and REST APIs.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="express">
+              Mark Complete
+            </button>
+          </div>
+
+          <!-- APIs -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>REST APIs</h3>
+
+              <p>Work with HTTP requests and API integration.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="apis">Mark Complete</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Database -->
+
+      <section class="skill-section">
+        <div class="skill-section-heading">
+          <h2>Database</h2>
+
+          <p>Learn how applications store and manage data.</p>
+        </div>
+
+        <div class="skill-grid">
+          <!-- SQL -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>SQL</h3>
+
+              <p>Queries, joins, relationships and databases.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="sql">Mark Complete</button>
+          </div>
+
+          <!-- MongoDB -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>MongoDB</h3>
+
+              <p>Work with NoSQL databases and collections.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="mongodb">
+              Mark Complete
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cloud -->
+
+      <section class="skill-section">
+        <div class="skill-section-heading">
+          <h2>☁️ Cloud & Deployment</h2>
+
+          <p>Learn how applications are deployed and hosted.</p>
+        </div>
+
+        <div class="skill-grid">
+          <!-- AWS -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>AWS</h3>
+
+              <p>Learn cloud services and application deployment.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="aws">Mark Complete</button>
+          </div>
+
+          <!-- Docker -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>Docker</h3>
+
+              <p>Containerize and run applications.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="docker">Mark Complete</button>
+          </div>
+
+          <!-- Deployment -->
+
+          <div class="skill-card">
+            <div class="skill-icon"></div>
+
+            <div class="skill-content">
+              <h3>Deployment</h3>
+
+              <p>Deploy applications and make them accessible online.</p>
+            </div>
+
+            <button class="skill-btn" data-skill="deployment">
+              Mark Complete
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

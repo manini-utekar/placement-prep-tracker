@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core Subjects - PlacementPrep</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">PlacementPrep</div>
+
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dsa.html">DSA</a>
+        <a href="development.html">Development</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="projects.html">Projects</a>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="subjects-page">
+      <section class="subjects-header">
+        <p>PLACEMENT PREPARATION</p>
+        <h1>Core Subjects</h1>
+        <p>Track your preparation for important technical subjects.</p>
+      </section>
+
+      <section class="subjects-progress-card">
+        <div class="progress-heading">
+          <div>
+            <h2>Overall Subject Progress</h2>
+            <p id="subjects-count">0 / 12 topics</p>
+          </div>
+
+          <span id="subjects-progress">0%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="subjects-progress-fill"></div>
+        </div>
+      </section>
+
+      <!-- OOP -->
+
+      <section class="subject-section">
+        <h2>Object Oriented Programming</h2>
+
+        <div class="subject-grid">
+          <div class="subject-card">
+            <h3>Classes & Objects</h3>
+            <button class="subject-btn" data-subject="classes">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>Inheritance</h3>
+            <button class="subject-btn" data-subject="inheritance">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>Polymorphism</h3>
+            <button class="subject-btn" data-subject="polymorphism">
+              Mark Complete
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- DBMS -->
+
+      <section class="subject-section">
+        <h2>DBMS</h2>
+
+        <div class="subject-grid">
+          <div class="subject-card">
+            <h3>SQL & Queries</h3>
+            <button class="subject-btn" data-subject="sql">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>Normalization</h3>
+            <button class="subject-btn" data-subject="normalization">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>Transactions</h3>
+            <button class="subject-btn" data-subject="transactions">
+              Mark Complete
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Operating Systems -->
+
+      <section class="subject-section">
+        <h2>Operating Systems</h2>
+
+        <div class="subject-grid">
+          <div class="subject-card">
+            <h3>Process Management</h3>
+            <button class="subject-btn" data-subject="process">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>CPU Scheduling</h3>
+            <button class="subject-btn" data-subject="scheduling">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>Memory Management</h3>
+            <button class="subject-btn" data-subject="memory">
+              Mark Complete
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Computer Networks -->
+
+      <section class="subject-section">
+        <h2>Computer Networks</h2>
+
+        <div class="subject-grid">
+          <div class="subject-card">
+            <h3>OSI Model</h3>
+            <button class="subject-btn" data-subject="osi">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>TCP / UDP</h3>
+            <button class="subject-btn" data-subject="tcp">
+              Mark Complete
+            </button>
+          </div>
+
+          <div class="subject-card">
+            <h3>IP Addressing</h3>
+            <button class="subject-btn" data-subject="ip">Mark Complete</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

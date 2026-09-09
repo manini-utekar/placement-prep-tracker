@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>DSA Tracker | PlacementPrep</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <header class="navbar">
+      <div class="logo">PlacementPrep</div>
+
+      <nav>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dsa.html" class="active">DSA</a>
+        <a href="development.html">Development</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="projects.html">Projects</a>
+
+        <button id="logout-btn">Logout</button>
+      </nav>
+    </header>
+
+    <!-- Main DSA Section -->
+
+    <main class="dsa-page">
+      <!-- Page Heading -->
+
+      <section class="dsa-header">
+        <div>
+          <p class="small-text">CODING PREPARATION</p>
+
+          <h1>DSA Tracker</h1>
+
+          <p>Track your coding practice and stay consistent.</p>
+        </div>
+      </section>
+
+      <!-- Statistics -->
+
+      <section class="dsa-stats">
+        <div class="dsa-stat-card">
+          <span></span>
+          <h3 id="total-problems">15</h3>
+          <p>Total Problems</p>
+        </div>
+
+        <div class="dsa-stat-card">
+          <span></span>
+          <h3 id="solved-problems">0</h3>
+          <p>Solved</p>
+        </div>
+
+        <div class="dsa-stat-card">
+          <span></span>
+          <h3 id="remaining-problems">15</h3>
+          <p>Remaining</p>
+        </div>
+
+        <div class="dsa-stat-card">
+          <span></span>
+          <h3 id="dsa-progress">0%</h3>
+          <p>Progress</p>
+        </div>
+      </section>
+
+      <!-- Progress -->
+
+      <section class="dsa-progress-card">
+        <div class="progress-heading">
+          <h2>Overall Progress</h2>
+
+          <span id="progress-percentage">0%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="dsa-progress-fill"></div>
+        </div>
+      </section>
+
+      <!-- Difficulty -->
+
+      <section class="difficulty-section">
+        <h2>Difficulty</h2>
+
+        <div class="difficulty-container">
+          <div>
+            🟢 Easy
+            <strong id="easy-count">0</strong>
+          </div>
+
+          <div>
+            🟡 Medium
+            <strong id="medium-count">0</strong>
+          </div>
+
+          <div>
+            🔴 Hard
+            <strong id="hard-count">0</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- Problems -->
+
+      <section class="problems-section">
+        <div class="section-heading">
+          <div>
+            <h2>Problems</h2>
+            <p>Practice problems and mark them when completed.</p>
+          </div>
+        </div>
+
+        <div class="problem-list">
+          <!-- Problem 1 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Two Sum</h3>
+
+              <p>Find two numbers that add up to a target.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a href="https://leetcode.com/problems/two-sum/" target="_blank">
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="two-sum">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 2 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Build Array from Permutation</h3>
+
+              <p>Construct a new array using a given permutation.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/build-array-from-permutation/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="build-array">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 3 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Binary Search</h3>
+
+              <p>Search for a target element using binary search.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/binary-search/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="binary-search">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 4 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Best Time to Buy and Sell Stock</h3>
+
+              <p>Find the maximum profit from buying and selling stock.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="stock">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 5 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Contains Duplicate</h3>
+
+              <p>Check whether an array contains duplicate values.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/contains-duplicate/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="contains-duplicate">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 6 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Maximum Subarray</h3>
+
+              <p>Find the contiguous subarray with maximum sum.</p>
+
+              <span class="medium">Medium</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/maximum-subarray/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="maximum-subarray">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 7 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Valid Anagram</h3>
+
+              <p>Check whether two strings are anagrams.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/valid-anagram/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="valid-anagram">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+
+          <!-- Problem 8 -->
+
+          <div class="problem-card">
+            <div class="problem-info">
+              <h3>Valid Parentheses</h3>
+
+              <p>Check whether brackets are correctly balanced.</p>
+
+              <span class="easy">Easy</span>
+            </div>
+
+            <div class="problem-action">
+              <a
+                href="https://leetcode.com/problems/valid-parentheses/"
+                target="_blank"
+              >
+                Solve
+              </a>
+
+              <button class="solve-btn" data-problem="valid-parentheses">
+                Mark Solved
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

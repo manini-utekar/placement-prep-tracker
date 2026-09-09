@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - PlacementPrep</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">PlacementPrep</div>
+
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="dsa.html">DSA</a>
+        <a href="development.html">Development</a>
+        <a href="subjects.html">Subjects</a>
+        <a href="aptitude.html">Aptitude</a>
+        <a href="projects.html">Projects</a>
+        <button id="logout-btn">Logout</button>
+      </div>
+    </nav>
+
+    <main class="projects-page">
+      <section class="projects-header">
+        <p>PORTFOLIO PREPARATION</p>
+
+        <h1>My Projects</h1>
+
+        <p>Build, track and improve projects that strengthen your resume.</p>
+      </section>
+
+      <section class="projects-progress-card">
+        <div class="progress-heading">
+          <div>
+            <h2>Project Progress</h2>
+            <p id="projects-count">0 / 4 projects completed</p>
+          </div>
+
+          <span id="projects-progress">0%</span>
+        </div>
+
+        <div class="progress-bar">
+          <div id="projects-progress-fill"></div>
+        </div>
+      </section>
+
+      <section class="projects-grid">
+        <!-- PROJECT 1 -->
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+
+          <h2>Coffee Haven</h2>
+
+          <p>
+            A responsive coffee shop website built using HTML, CSS and
+            JavaScript.
+          </p>
+
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-status">
+            <span>Frontend Project</span>
+          </div>
+
+          <button class="project-btn" data-project="coffee-haven">
+            Mark Complete
+          </button>
+        </div>
+
+        <!-- PROJECT 2 -->
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+
+          <h2>Placement Prep Tracker</h2>
+
+          <p>
+            A personal placement preparation tracker for DSA, development,
+            aptitude and core subjects.
+          </p>
+
+          <div class="project-tech">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+
+          <div class="project-status">
+            <span>In Progress</span>
+          </div>
+
+          <button class="project-btn" data-project="placement-tracker">
+            Mark Complete
+          </button>
+        </div>
+
+        <!-- PROJECT 3 -->
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+
+          <h2>Expense Tracker</h2>
+
+          <p>
+            A full-stack expense management application to track income,
+            spending and financial records.
+          </p>
+
+          <div class="project-tech">
+            <span>JavaScript</span>
+            <span>AWS</span>
+            <span>DynamoDB</span>
+          </div>
+
+          <div class="project-status">
+            <span>Planned</span>
+          </div>
+
+          <button class="project-btn" data-project="expense-tracker">
+            Mark Complete
+          </button>
+        </div>
+
+        <!-- PROJECT 4 -->
+
+        <div class="project-card">
+          <div class="project-icon"></div>
+
+          <h2>Movie Recommender</h2>
+
+          <p>
+            A recommendation system that suggests movies based on user
+            preferences.
+          </p>
+
+          <div class="project-tech">
+            <span>Python</span>
+            <span>ML</span>
+            <span>API</span>
+          </div>
+
+          <div class="project-status">
+            <span>Planned</span>
+          </div>
+
+          <button class="project-btn" data-project="movie-recommender">
+            Mark Complete
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
